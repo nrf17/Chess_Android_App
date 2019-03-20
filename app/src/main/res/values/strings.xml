@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Chess</string>
+    <string name="play_game_label">Play</string>
+    <string name="play_back_label">Play Back</string>
+    <string name="action_settings">Settings</string>
+    <string name="current_team_prompt_white">White\'s turn</string>
+    <string name="current_team_prompt_black">Black\'s turn</string>
+    <string name="dialog_invalid_undo_main">Invalid undo</string>
+    <string name="dialog_invalid_undo_secondary">You are only allowed to undo the last move.</string>
+    <string name="dialog_invalid_move_main">Invalid move</string>
+    <string name="dialog_invalid_move_secondary">Move isn\'t valid, try again</string>
+    <string name="dialog_save_game_main">Save game</string>
+    <string name="dialog_save_game_secondary">Would you like to save the game? Enter a title for the game.</string>
+    <string name="dialog_save_game_title_hint">Game Title</string>
+    <string name="error">Error</string>
+    <string name="dialog_ai_error_secondary">Error in AI move, could be in stalemate.</string>
+    <string name="dialog_stalemate_main">It\'s a draw!</string>
+    <string name="dialog_stalemate_secondary">The game is in a stalemate. There is no winner.</string>
+    <string name="dialog_check_main">Check</string>
+    <string name="dialog_check_secondary_white">The white king is in check. The next move must move the king out of check.</string>
+    <string name="dialog_check_secondary_black">The black king is in check. The next move must move the king out of check.</string>
+    <string name="dialog_black_wins">Black wins!</string>
+    <string name="dialog_white_wins">White wins!</string>
+    <string name="dialog_checkmate_secondary">Checkmate! The game is over.</string>
+    <string name="ok">Ok</string>
+    <string name="dialog_pawn_promo">Pawn promotion selection</string>
+    <string-array name="pawn_promo_options">
+        <item>Queen</item>
+        <item>Knight</item>
+        <item>Rook</item>
+        <item>Bishop</item>
+    </string-array>
+    <string name="dialog_sort_game_list">Sort games</string>
+    <string-array name="sort_games_options">
+        <item>Most recent</item>
+        <item>Alphabetical</item>
+    </string-array>
+</resources>

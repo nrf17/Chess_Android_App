@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayBack">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/currentTeam"
+            android:textSize="26sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:textColor="@color/secondaryTextColor"
+            android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+        <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/board"
+            android:layout_width="365dp"
+            android:layout_height="365dp"
+            android:numColumns="8"
+            android:layout_gravity="center">
+
+        </GridView>
+
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="1"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="25dp">
+
+            <ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/resign"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="back"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back"
+                android:tint="@color/primaryColor" />
+
+            <ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/ai"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="forward"
+                android:scaleType="fitCenter"
+                android:src="@drawable/forward"
+                android:tint="@color/primaryColor" />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

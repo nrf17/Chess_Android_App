@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="group51.chess.GameList">
+    <item
+        android:id="@+id/sort"
+        android:title="Sort"
+        android:icon="@drawable/sort"
+        app:showAsAction="always" />
+</menu>
